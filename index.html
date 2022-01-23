@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Игра ПАРЫ</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script defer src="./couples-app.js"></script>       
+  </head>
+  <body>
+    <div class="md-overlay md-effect md-show">
+      <div class="md-modal md-effect md-show">
+        <div class="md-content">  
+          <h2>Игра ПАРЫ</h2>
+          <p>Количество карточек по горизонтали (от 2 до 10, чётные):</p>          
+          <input id="h-count" required class="price-filter__input" type="number" min="2" max="10" placeholder="4">
+          <p>Количество карточек по вертикали (от 2 до 10, чётные):</p>
+          <input id="v-count" required class="price-filter__input" type="number" min="2" max="10" placeholder="4">
+          <button id="start" class="reset-btn game-btn">
+            Начать игру!
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div id="timer"></div>      
+      <div id="couples-game" class="wrapper"></div>
+      <button id="onemore" class="reset-btn game-btn not-visible">Сыграть еще раз!</button>
+    </div>
+  </body>
+</html>
